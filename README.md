@@ -61,25 +61,25 @@ Clone this github project, and run the following commands.
 
 ## Check the gitlab-ce versions.
 
-```bash
+```shell-session
 $ ./download_gitlab-ce_deb.sh --list
 ```
 
 ## Download the debian package of Raspbian.
 
-```bash
+```shell-session
 $ ./download_gitlab-ce_deb.sh
 ```
 
 or
 
-```bash
+```shell-session
 $ ./download_gitlab-ce_deb.sh <version>
 ```
 
 ## Make build
 
-```bash
+```shell-session
 $ ./deb2rpm_gitlab-ce.armv7hl.sh <deb_package>
 ```
 
