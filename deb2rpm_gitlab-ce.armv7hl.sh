@@ -7,7 +7,7 @@ SPECTEMP="./gitlab_ce.spec.template"
 
 usage_exit(){
 	echo "Usage:"
-	echo "	$0 <deb_package> <spec_template>"
+	echo "	$0 <deb_package>"
 	exit 1
 }
 check_exist_command() {
@@ -19,7 +19,7 @@ check_exist_command() {
 }
 
 # check argument (debian package)
-[ $# -ne 2 ] && usage_exit
+[ $# -ne 1 ] && usage_exit
 [ ! -f $1 ] && usage_exit
 file $1 | grep "Debian binary package" >/dev/null 2>&1
 [ $? -ne 0 ] && usage_exit

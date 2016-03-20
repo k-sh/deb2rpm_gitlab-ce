@@ -6,6 +6,7 @@ Release: @@RELEASE@@%{?dist}
 Vendor:  Omnibus <omnibus@getchef.com>
 URL:     https://about.gitlab.com/
 Summary: GitLab Community Edition and GitLab CI (including NGINX, Postgres, Redis)
+License: unkown
 Group: default
 Packager: k-sh
 Prefix:   %{_prefix}
