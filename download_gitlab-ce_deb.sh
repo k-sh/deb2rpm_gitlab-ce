@@ -57,7 +57,7 @@ else
 				continue
 			fi
 		fi
-		wget ${url} -O ${deb_name} ${url}
+		wget -O ${deb_name} ${url}
 		GFLAG=true
 		break
 	done
